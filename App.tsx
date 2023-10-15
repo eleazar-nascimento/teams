@@ -4,6 +4,7 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import { Groups } from './src/screens/Groups';
 import theme from '@theme/index';
 import { Loading } from '@components/Loading';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   const [fontsLoaded, ] = useFonts({
@@ -11,16 +12,9 @@ export default function App() {
     Roboto_700Bold
   });
 
-  // if(fontsLoaded) {
-
-  // }
-
   return (
-    <ThemeProvider theme={theme} >
-      { 
-        !fontsLoaded ?
-        <Groups /> : <Loading />
-      }
+    <ThemeProvider theme={theme}>
+      { fontsLoaded ? <Groups /> : <Loading /> }
     </ThemeProvider>
   );
 }
