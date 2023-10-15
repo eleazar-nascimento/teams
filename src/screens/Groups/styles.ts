@@ -5,8 +5,3 @@ export const Container = styled.View`
     background-color: ${({ theme }) => theme.COLORS.GRAY_600};
     padding: 24px;
 `;
-
-export const Text = styled.Text`
-    color: #FFF;
-    font-size: 32;
-`;
