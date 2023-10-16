@@ -1,9 +1,10 @@
-import { Header } from '@components/Header';
-import { Container } from './styles';
-import { Highlight } from '@components/Highlight';
-import { GroupCard } from '@components/GroupCard';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
+import { Container } from './styles';
+
+import { Header } from '@components/Header';
+import { Highlight } from '@components/Highlight';
+import { GroupCard } from '@components/GroupCard';
 import { ListEmpty } from '@components/ListEmpty';
 import { Button } from '@components/Button';
 
