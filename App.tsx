@@ -6,6 +6,7 @@ import theme from '@theme/index';
 import { Loading } from '@components/Loading';
 import { StatusBar } from 'expo-status-bar';
 import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 
 export default function App() {
   const [fontsLoaded, ] = useFonts({
@@ -16,7 +17,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       {/* { fontsLoaded ? <Groups /> : <Loading /> } */}
-      { fontsLoaded ? <NewGroup /> : <Loading /> }
+      {/* { fontsLoaded ? <NewGroup /> : <Loading /> } */}
+      { fontsLoaded ? <Players /> : <Loading /> }
     </ThemeProvider>
   );
 }
